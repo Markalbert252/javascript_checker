@@ -1,0 +1,148 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #c9a591;
+}
+
+.board{
+    margin-right: 100px;
+    border: 10px solid brown;
+    border-radius: 20px;
+}
+
+.row{
+    display: flex;
+}
+
+.cell{
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: grey;
+
+    cursor: pointer;
+}
+
+.cell.select{
+    border: 5px solid blue;
+}
+
+.cell.active{
+    opacity: 0.2;
+}
+
+.piece{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+
+    cursor: pointer;
+}
+
+.piece1{
+    background-color: black;
+}
+
+.piece2{
+    background-color: white;
+}
+
+.piece.king{
+    border: 5px solid yellow;
+}
+
+.row:nth-child(odd) .cell:nth-child(even){
+    background-color: chocolate;
+}
+
+.row:nth-child(even) .cell:nth-child(odd){
+    background-color: chocolate;
+}
+
+.user-data{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+#white-score{
+    color: black;
+    border: 5px solid black;
+    background-color: white;
+}
+
+#black-score{
+    color: white;
+    border: 5px solid white;
+    background-color: black;
+}
+
+.playerTurn{
+    width: 150px;
+    height: 150px;
+
+    border-radius: 15px;
+    border: 5px solid brown;
+    background-color: beige;
+
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 25px;
+}
+
+.winning-box{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    background: rgba(0, 0, 0, 0.8);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 100px;
+    color: greenyellow;
+
+    display: none;
+}
+
+
+
+
+
+
